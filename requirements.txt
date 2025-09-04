@@ -1,0 +1,24 @@
+# MCP BI Assistant Server Requirements
+
+# Core MCP and async support
+mcp
+asyncio-mqtt
+asyncpg
+
+# Database and data handling
+psycopg2-binary
+sqlalchemy
+pandas
+aiosqlite
+# Environment and configuration
+python-dotenv
+
+# Logging and utilities
+structlog
+
+# Optional development dependencies
+pytest
+pytest-asyncio
+black
+isort
+mypy
