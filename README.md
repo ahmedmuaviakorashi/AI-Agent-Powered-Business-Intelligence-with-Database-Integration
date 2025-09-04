@@ -96,23 +96,19 @@ https://github.com/user-attachments/assets/827134df-455a-4b18-b727-b8ce2b496906
 1.  **Claude Analysis:** Claude identifies the need for ROAS calculation for specific products and a time period.
 2.  **Tool Selection:** Claude decides to use the `compute_metric` tool twice: once for Product A and once for Product B, both for `month=5` and `metric=roas`.
 3.  **Server Execution:** The BI Server receives the two tool calls, executes the corresponding SQL queries against the `campaign_performance` view, and returns the numeric results.
-4.  **Synthesis & Response:** Claude receives the two data points (e.g., `Product A ROAS: 4.2`, `Product B ROAS: 3.1`). It calculates the difference, determines that Product A performed ~35% better, and presents the answer in a clear, formatted response to the user.
+4.  **Synthesis & Response:** Claude receives the two data points (`Product A ROAS: 1.8`, `Product B ROAS: 2.68`). It calculates the difference, determines that Product B outperformed Product A by *~49%*, and presents the answer in a clear, formatted response to the user.
 
 ### 6. Project Deliverables
 
 1.  **Core Application (`bi_server.py`):** The production-ready MCP server application implementing all tools and resources.
 2.  **Database Schema & Sample Data (`db.py`):** A script to generate a fully populated SQLite database with a realistic marketing data model for demonstration and testing.
 3.  **Automated Setup Script (`setup.py`):** A comprehensive installation and configuration script that handles environment setup, dependency installation, and client (Claude Desktop) integration.
-4.  **Technical Documentation:**
-    *   **Setup Guide:** Instructions for running the automated setup and manual configuration if needed.
-    *   **API Documentation:** Specifications for all exposed MCP tools and resources.
-    *   **Usage Examples:** A catalog of sample queries and expected outcomes for users.
-5.  **Configuration Files:**
+4.  **Configuration Files:**
     *   `requirements.txt`: List of Python dependencies.
     *   `.env`: Environment template for database connection and settings.
-6.  **Validation Suite (`test_bi_assistant.py`):** A set of tests to verify the server's functionality, tool responses, and database connectivity post-installation.
-
+    
 ---
 
 
 *This prototype demonstrates the power of AI-powered business intelligence, making complex data analysis accessible through natural language interfaces.*
+
