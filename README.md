@@ -37,7 +37,7 @@ The MCP-Powered BI Assistant is a server application that acts as a bridge betwe
     *   `bi://metrics`: Definitions and formulas for key marketing metrics (ROAS, ROI, CTR, CPA, CPC, CPM).
 
 ### 4. System Architecture
-![Alt text](mermaid.png)
+![](mermaid.png)
 
 ```mermaid
 flowchart TD
@@ -88,6 +88,9 @@ flowchart TD
 ### 5. Example User Flow
 
 **User Query:**
+
+https://github.com/user-attachments/assets/827134df-455a-4b18-b727-b8ce2b496906
+
 > "What was the Return on Ad Spend for Product A in month 5, and how did it compare to Product B?"
 
 1.  **Claude Analysis:** Claude identifies the need for ROAS calculation for specific products and a time period.
@@ -110,5 +113,6 @@ flowchart TD
 6.  **Validation Suite (`test_bi_assistant.py`):** A set of tests to verify the server's functionality, tool responses, and database connectivity post-installation.
 
 ---
+
 
 *This prototype demonstrates the power of AI-powered business intelligence, making complex data analysis accessible through natural language interfaces.*
